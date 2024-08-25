@@ -1,0 +1,34 @@
+[gd_scene load_steps=7 format=3 uid="uid://3dujfj7t2eb4"]
+
+[ext_resource type="Texture2D" uid="uid://cpmfbhkrj51wh" path="res://assets/sprites/switch_east_dark.png" id="1_uv8ur"]
+[ext_resource type="Texture2D" uid="uid://cfqhoo8aqx457" path="res://assets/sprites/switch_east_light.png" id="2_tvjea"]
+[ext_resource type="Texture2D" uid="uid://dhpxoufxi7tsg" path="res://assets/sprites/switch_west_dark.png" id="3_jy8u0"]
+[ext_resource type="Texture2D" uid="uid://1oti16l10gxi" path="res://assets/sprites/switch_west_light.png" id="4_r7078"]
+[ext_resource type="Texture2D" uid="uid://6nxg1xugvhl7" path="res://assets/sprites/switch_north_dark.png" id="5_xr1ti"]
+[ext_resource type="Texture2D" uid="uid://dpdpxwdlldp8k" path="res://assets/sprites/switch_north_light.png" id="6_1nslv"]
+
+[node name="Mobile_control" type="CanvasLayer"]
+
+[node name="right" type="TouchScreenButton" parent="."]
+position = Vector2(212, 435)
+scale = Vector2(3, 3)
+texture_normal = ExtResource("1_uv8ur")
+texture_pressed = ExtResource("2_tvjea")
+passby_press = true
+action = "move right"
+
+[node name="left" type="TouchScreenButton" parent="."]
+position = Vector2(35, 436)
+scale = Vector2(3, 3)
+texture_normal = ExtResource("3_jy8u0")
+texture_pressed = ExtResource("4_r7078")
+passby_press = true
+action = "move left"
+
+[node name="jump" type="TouchScreenButton" parent="."]
+position = Vector2(956, 433)
+scale = Vector2(3, 3)
+texture_normal = ExtResource("5_xr1ti")
+texture_pressed = ExtResource("6_1nslv")
+passby_press = true
+action = "Jump"
